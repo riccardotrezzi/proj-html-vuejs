@@ -17,8 +17,17 @@ export default {
         </button>
       </div>
       <nav>
-        <div>
-
+        <div class="my-container navbar">
+          <div id="logo-fable">
+            <img src="../assets/fable-img/images/logo.png" alt="">
+          </div>
+          <div class="icon-nav">
+            <div class="link-nav">
+              <img class="icon-nav-img" src="../assets/fable-img/home.png" alt="">
+              <p>Home</p>
+            </div>
+            
+          </div>
         </div>
       </nav>
     </header>
@@ -26,6 +35,7 @@ export default {
 
 <style scoped>
 
+/*Add Envato*/
 #add-envato{
   height: 60px;
   padding: 20px 15px;
@@ -63,5 +73,34 @@ export default {
 
 
 /*NAVBAR*/
+nav{
+  height: 150px;
+  border: 1px solid black;
+}
 
+.navbar{
+  display: flex;
+}
+
+#logo-fable{
+  width: 200px;
+}
+
+.icon-nav{
+  display: flex;
+  align-items: center;
+}
+
+
+
+.icon-nav-img{
+  width:50px;
+  margin-bottom: 10px;
+}
+
+.link-nav > p{
+  font-size: 18px;
+  font-weight:bold;
+  color: #56509F;
+}
 </style>
