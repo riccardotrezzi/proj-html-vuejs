@@ -77,12 +77,9 @@ export default {
                     <span v-for="(slide, index) in slides" :key="slide.id" :class="{ active: index === currentSlide }" @click="goToSlide(index)">
                         <button  class="rect"></button>
                     </span>
-                    
                 </div>
                 
             </div>
-            
-
         </div>
     </section>
 
@@ -94,7 +91,6 @@ export default {
 .jumbotron {
     position: relative;
     overflow: hidden;
-    margin-bottom: 20px; /* Aggiunto per separare lo slideshow dal contenuto successivo */
   }
   
 .slideshow {
@@ -168,6 +164,7 @@ background-color: #FE6500;
         text-decoration: none;
         color:white;
         font-size: 16px;
+        font-weight: bold;
         text-transform: uppercase;
     }
 }
@@ -182,9 +179,9 @@ background-color: #FE6500;
 
     .rect{
         background-color: rgba(255, 255, 255, 0);
-        border: 3px solid #FE6500;
+        border: 2px solid #FE6500;
         width: 50px;
-        height: 25px;
+        height: 20px;
         margin: 5px;
     }
 }

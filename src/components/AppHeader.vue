@@ -1,13 +1,14 @@
 <script>
-import SlideShow from './under-components/SlideShow.vue';
-
+import SlideShow from './Header/SlideShow.vue';
+import BannerHeader from './Header/BannerHeader.vue';
 export default {
   data() {
     return {
     };
   },
   components: {
-    SlideShow
+    SlideShow,
+    BannerHeader
   }
 
 }
@@ -62,6 +63,7 @@ export default {
       </nav>
 
       <SlideShow />
+      <BannerHeader />
     </header>
 </template>
 
