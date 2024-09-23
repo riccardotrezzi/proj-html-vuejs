@@ -42,13 +42,25 @@ export default {
           <p class="text-data">Pulvinar forte maestro nodew terminal est ellipsis prism.</p>
         </div>
       </div>
-      <div class="row rect-data-slider">
-        <button class="rect-data"></button>
-        <button class="rect-data"></button>
-        <button class="rect-data"></button>
-        <button class="rect-data"></button>
-        <button class="rect-data"></button>
-        <button class="rect-data"></button>
+      <div class="row d-flex flex-row justify-content-center rect-data-slider">
+        <div class="col-2 g-0">
+          <button class="rect-data active"></button>
+        </div>
+        <div class="col-2 g-0">
+          <button class="rect-data"></button>
+        </div>
+        <div class="col-2 g-0">
+          <button class="rect-data"></button>
+        </div>
+        <div class="col-2 g-0">
+          <button class="rect-data"></button>
+        </div>
+        <div class="col-2 g-0">
+          <button class="rect-data"></button>
+        </div>
+        <div class="col-2 g-0">
+          <button class="rect-data"></button>
+        </div>
       </div>
     </div>
   </section>
@@ -111,7 +123,19 @@ section{
         border: 2px solid white;
         width: 50px;
         height: 15px;
-        margin: 5px;
+        margin:0 5px;
     }
+    .rect-data:hover{
+        background-color: rgba(255, 255, 255, 0);
+        border: 2px solid lightgrey;
+    }
+
+}
+
+.active{
+  position: relative;
+    bottom: 10px;
+    left: 50%; 
+    transform: translate(-50%,-50%);
 }
 </style>
