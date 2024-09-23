@@ -1,6 +1,6 @@
 <script>
-import OverviewSection from './OverviewSection.vue';
-import DataSlider from './DataSlider.vue';
+import OverviewSection from '../Welcome/OverviewSection.vue';
+import DataSlider from '../Welcome/DataSlider.vue';
 
 export default {
   data() {
@@ -25,6 +25,7 @@ export default {
           <p>Fable daycare, preschool, and kindergarten</p>
           <img class="m-3" src="/src/assets/fable-img/images/header_divider.png" alt="">
         </div>
+        
         
         <div class="row">
           <div class="col-3 d-flex flex-column align-items-center text-center">
