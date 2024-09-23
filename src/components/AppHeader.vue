@@ -33,27 +33,27 @@ export default {
                 <p>Home</p>
               </div>
               <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
-                <img class="icon-nav-img" src="../assets/fable-img/home.png" alt="">
+                <img class="icon-nav-img" src="../assets/fable-img/document.png" alt="">
                 <p>Pages</p>
               </div>
               <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
-                <img class="icon-nav-img" src="../assets/fable-img/home.png" alt="">
+                <img class="icon-nav-img" src="../assets/fable-img/printer.png" alt="">
                 <p>Blog</p>
               </div>
               <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
-                <img class="icon-nav-img" src="../assets/fable-img/home.png" alt="">
+                <img class="icon-nav-img" src="../assets/fable-img/cart.png" alt="">
                 <p>Shop</p>
               </div>
               <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
-                <img class="icon-nav-img" src="../assets/fable-img/home.png" alt="">
+                <img class="icon-nav-img" src="../assets/fable-img/lab.png" alt="">
                 <p>Shortcodes</p>
               </div>
               <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
-                <img class="icon-nav-img" src="../assets/fable-img/home.png" alt="">
+                <img class="icon-nav-img" src="../assets/fable-img/chat.png" alt="">
                 <p>Support</p>
               </div>
               <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
-                <img class="icon-nav-img" src="../assets/fable-img/home.png" alt="">
+                <img class="icon-nav-img" src="../assets/fable-img/envelope.png" alt="">
                 <p>Contact</p>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 /*Add Envato*/
 #add-envato{
@@ -103,11 +103,11 @@ export default {
 
 /*NAVBAR*/
 nav{
-  box-shadow: 0 0 10px 0 #26262617;
+  box-shadow: 0 0 15px 0 #262626dc;
 }
 
 .navbar{
-  height: 150px;
+  height: 125px;
 }
 
 .navbar > .row{
@@ -124,8 +124,7 @@ nav{
 
 .link-nav{
   width: 110px;
-  height: 150px;
-  padding: 10px;
+  height: 125px;
 }
 
 .icon-nav-img{
@@ -145,10 +144,13 @@ nav{
   justify-content: center;
   align-items: center;
   align-self: center;
-  height: 150px;
+  height: 125px;
   background-color: #FE6500;
   padding: 10px;
-  color: white;
+
+    p{
+      color: white;
+    }
 }
 
 .link-nav:hover{
@@ -157,10 +159,13 @@ nav{
   justify-content: center;
   align-items: center;
   align-self: center;
-  height: 150px;
+  height: 125px;
   background-color: #FE6500;
   padding: 10px;
-  color: white;
+
+    p{
+      color:white;
+    }
 }
 
 
