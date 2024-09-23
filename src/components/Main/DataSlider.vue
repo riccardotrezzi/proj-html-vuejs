@@ -69,7 +69,7 @@ export default {
 <style lang="scss" scoped>
 
 section{
-  height: 450px;
+  height: 500px;
   background-image: url("/src/assets/fable-img/images/parallax_01.jpg");
   background-attachment: fixed;
   position:relative;
@@ -114,7 +114,7 @@ section{
 
 .rect-data-slider{
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 50%; 
     transform: translate(-50%,-50%);
 
