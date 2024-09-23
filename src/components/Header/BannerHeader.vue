@@ -10,7 +10,7 @@ export default {
 
 <template>
     <section class="d-flex align-items-center">
-        <div class="my-container d-flex align-items-center">
+        <div class="my-container d-flex justify-content-between align-items-center">
             <h2>
                 How to Enroll Your Child to a Class?
             </h2>
@@ -28,6 +28,10 @@ section{
     height: 130px;
     background-image: url("/src/assets/fable-img/images/pattern.png");
     background-attachment: fixed;
+
+    div{
+        width: 100%;
+    }
 }
 
 h2{

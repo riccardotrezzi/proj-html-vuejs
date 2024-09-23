@@ -1,14 +1,21 @@
 <script>
+import OverviewSection from './OverviewSection.vue';
+
 export default {
   data() {
     return {
     };
+  },
+  components: {
+    OverviewSection
   }
 
 }
 </script>
 
 <template>
+
+    <!--WELCOME SECTION-->
     <section class="m-5">
       <div class="my-container">
         <div id="title-section" class="d-flex flex-column align-items-center">
@@ -18,43 +25,45 @@ export default {
         </div>
         
         <div class="row">
-          <div class="col-3">
-            <div class="circle-img">
+          <div class="col-3 d-flex flex-column align-items-center text-center">
+            <div class="circle-img-orange">
               <img src="/src/assets/fable-img/images/schoolbag_alt.png" alt="">
             </div>
-            <h4>Morbi Etos</h4>
-            <p>Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.</p>
+            <h4 class="title-circle">Morbi Etos</h4>
+            <p class="text-circle">Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.</p>
           </div>
-          <div class="col-3">
-            <div class="circle-img">
-              <img src="/src/assets/fable-img/images/schoolbag_alt.png" alt="">
+          <div class="col-3 d-flex flex-column align-items-center text-center">
+            <div class="circle-img-blu">
+              <img src="/src/assets/fable-img/images/stroller_alt.png" alt="">
             </div>
-            <h4>Morbi Etos</h4>
-            <p>Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.</p>
+            <h4 class="title-circle">Congue Gravida</h4>
+            <p class="text-circle">Elipsis magna a terminal nulla elementum morbi elite forte maecenas est magna etos interdum vitae est.</p>
           </div>
-          <div class="col-3">
-            <div class="circle-img">
+          <div class="col-3 d-flex flex-column align-items-center text-center">
+            <div class="circle-img-orange">
               <img src="/src/assets/fable-img/images/globe_alt.png" alt="">
             </div>
-            <h4>Morbi Etos</h4>
-            <p>Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.</p>
+            <h4 class="title-circle">Maecenas Node</h4>
+            <p class="text-circle">Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.</p>
           </div>
-          <div class="col-3">
-            <div class="circle-img">
-              <img src="/src/assets/fable-img/images/schoolbag_alt.png" alt="">
+          <div class="col-3 d-flex flex-column align-items-center text-center">
+            <div class="circle-img-blu">
+              <img src="/src/assets/fable-img/images/bell_alt.png" alt="">
             </div>
-            <h4>Morbi Etos</h4>
-            <p>Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.</p>
+            <h4 class="title-circle">Praesent Morbi</h4>
+            <p class="text-circle">Elipsis magna a terminal nulla elementum morbi elite forte maecenas est magna etos interdum vitae est.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <OverviewSection />
 </template>
 
 <style lang="scss" scoped>
 
 #title-section{
-  margin: 20px 0;
+  margin: 40px 0;
 
     h1{
       font-size: 3rem;
@@ -72,4 +81,28 @@ export default {
       color:grey;
     }
 }
+
+.circle-img-orange{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height:170px;
+  border-radius: 50%;
+  padding:15px;
+  margin-bottom: 20px;
+  background-color: #FE6500;
+}
+.circle-img-blu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height:170px;
+  border-radius: 50%;
+  padding:15px;
+  margin-bottom: 20px;
+  background-color: #56509F;
+}
+
 </style>

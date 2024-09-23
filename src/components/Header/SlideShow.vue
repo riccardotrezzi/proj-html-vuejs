@@ -75,7 +75,7 @@ export default {
 
                 <div class="rect-slide">
                     <span v-for="(slide, index) in slides" :key="slide.id" :class="{ active: index === currentSlide }" @click="goToSlide(index)">
-                        <button  class="rect"></button>
+                        <button class="rect"></button>
                     </span>
                 </div>
                 
