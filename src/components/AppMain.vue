@@ -1,8 +1,13 @@
 <script>
+import WelcomeSection from './Main/WelcomeSection.vue';
+
 export default {
   data() {
     return {
     };
+  },
+  components:{
+    WelcomeSection
   }
 
 }
@@ -10,7 +15,7 @@ export default {
 
 <template>
     <main>
-        MAIN
+        <WelcomeSection />
     </main>
 </template>
 

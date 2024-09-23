@@ -74,6 +74,7 @@ export default {
   height: 60px;
   padding: 20px 15px;
   background-color: #262626;
+  position: sticky;
 }
 
 #logo-envato-market{
