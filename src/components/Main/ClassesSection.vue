@@ -1,5 +1,4 @@
 <script>
-import WelcomeSection from './Main/WelcomeSection.vue';
 
 export default {
   data() {

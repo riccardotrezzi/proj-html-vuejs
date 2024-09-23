@@ -1,6 +1,6 @@
 <script>
-import OverviewSection from '../Welcome/OverviewSection.vue';
-import DataSlider from '../Welcome/DataSlider.vue';
+import DataSlider from '../Main/DataSlider.vue';
+import OverviewSection from '../Main/OverviewSection.vue';
 
 export default {
   data() {

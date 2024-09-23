@@ -1,6 +1,6 @@
 <script>
-import WelcomeSection from './Main/Welcome/WelcomeSection.vue';
-import ClassesSection from './Main/OurClasses/ClassesSection.vue';
+import WelcomeSection from './Main/WelcomeSection.vue';
+import ClassesSection from './Main/ClassesSection.vue';
 
 export default {
   data() {
