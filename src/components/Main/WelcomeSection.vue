@@ -1,5 +1,6 @@
 <script>
 import OverviewSection from './OverviewSection.vue';
+import DataSlider from './DataSlider.vue';
 
 export default {
   data() {
@@ -7,7 +8,8 @@ export default {
     };
   },
   components: {
-    OverviewSection
+    OverviewSection,
+    DataSlider
   }
 
 }
@@ -58,6 +60,7 @@ export default {
     </section>
 
     <OverviewSection />
+    <DataSlider />
 </template>
 
 <style lang="scss" scoped>
