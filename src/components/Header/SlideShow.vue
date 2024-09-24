@@ -33,27 +33,30 @@ export default {
         currentSlide: 0
     };
   },
-  methods: {
-    nextSlide() {
-        if(this.currentSlide + 1 < this.slides.length) {
-            this.currentSlide++;
-        }
-        else {
-            this.currentSlide = 0;
-        }
+    mounted() {
+        setInterval(this.nextSlide, 7000); // Cambia diapositiva ogni 5 secondi
     },
-    prevSlide () {
-        if (this.currentSlide > 0) {
-            this.currentSlide--;
+    methods: {
+        nextSlide() {
+            if(this.currentSlide + 1 < this.slides.length) {
+                this.currentSlide++;
+            }
+            else {
+                this.currentSlide = 0;
+            }
+        },
+        prevSlide () {
+            if (this.currentSlide > 0) {
+                this.currentSlide--;
+            }
+            else {
+                this.currentSlide = this.slides.length - 1;
+            }
+        },
+        goToSlide(index) {
+            this.currentSlide = index;
         }
-        else {
-            this.currentSlide = this.slides.length - 1;
-        }
-    },
-    goToSlide(index) {
-        this.currentSlide = index;
     }
-  }
 
 }
 </script>

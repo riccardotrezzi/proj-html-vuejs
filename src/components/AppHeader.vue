@@ -67,7 +67,7 @@ export default {
     <BannerHeader />
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
  nav{
   box-shadow: 0 0 15px 0 #262626dc;
   background-color: white;
@@ -121,7 +121,7 @@ export default {
 }
 
 #logo-fable{
-  width: 200px;
+  width: 180px;
 }
 
 .icon-nav{
