@@ -3,6 +3,7 @@ import WelcomeSection from './Main/WelcomeSection.vue';
 import ClassesSection from './Main/ClassesSection.vue';
 import StaffSection from './Main/StaffSection.vue';
 import BlogSection from './Main/BlogSection.vue';
+import ContactSection from './Main/ContactSection.vue';
 
 export default {
   data() {
@@ -13,7 +14,8 @@ export default {
     WelcomeSection,
     ClassesSection,
     StaffSection,
-    BlogSection
+    BlogSection,
+    ContactSection
   }
 
 }
@@ -25,6 +27,7 @@ export default {
         <ClassesSection />
         <StaffSection />
         <BlogSection />
+        <ContactSection />
     </main>
 </template>
 

@@ -17,7 +17,7 @@ export default {
 <template>
   <section>
     <div class="my-container">
-      <div id="title-staff" class="d-flex flex-column align-items-center">
+      <div id="title-blog" class="d-flex flex-column align-items-center">
         <h1 class="open-sans-light">What's New</h1>
         <p>Keep up to date with the latest news</p>
         <img class="m-3" src="/src/assets/fable-img/images/header_divider.png" alt="">
@@ -106,7 +106,7 @@ export default {
 
 <style lang="scss" scoped>
 
-#title-staff{
+#title-blog{
   margin: 40px 0;
 
     h1{
