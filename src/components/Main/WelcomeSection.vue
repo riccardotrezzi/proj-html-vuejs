@@ -97,6 +97,7 @@ export default {
   margin-bottom: 20px;
   background-color: #FE6500;
 }
+
 .circle-img-blu{
   display: flex;
   justify-content: center;
@@ -107,6 +108,16 @@ export default {
   padding:15px;
   margin-bottom: 20px;
   background-color: #56509F;
+}
+
+.title-circle{
+  color: #56509F; 
+}
+
+.text-circle{
+  font-size: 18px;
+  font-weight: 300;
+  color: grey;
 }
 
 </style>
