@@ -1,6 +1,7 @@
 <script>
 import WelcomeSection from './Main/WelcomeSection.vue';
 import ClassesSection from './Main/ClassesSection.vue';
+import StaffSection from './Main/StaffSection.vue';
 
 export default {
   data() {
@@ -9,7 +10,8 @@ export default {
   },
   components:{
     WelcomeSection,
-    ClassesSection
+    ClassesSection,
+    StaffSection
   }
 
 }
@@ -19,6 +21,7 @@ export default {
     <main>
         <WelcomeSection />
         <ClassesSection />
+        <StaffSection />
     </main>
 </template>
 

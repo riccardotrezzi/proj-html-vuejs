@@ -21,26 +21,28 @@ export default {
   <section>
     <div class="my-container">
       <div id="title-classes" class="d-flex flex-column align-items-center">
-          <h1 class="open-sans-light">Our Classes</h1>
-          <p>Our preschool program has four dedicated classes</p>
-          <img class="m-3" src="/src/assets/fable-img/images/header_divider.png" alt="">
-        </div>
-    </div>
-
-    <div class="my-container">
-      <div class="row w-100 d-flex justify-content-between">
-        <div id="text-sx" class="col-6">
-          <p>
-            We provided four classes with nine to twenty children each aged twelve month to five years of age.
-          </p>
-        </div>
-        <div id="text-dx" class="col-6">
-          <p>
-            Praesent arcu gravida vehicula est node maecenas loareet morbi a dosis luctus. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis. Aenean interdum, nibh vitae sodales, magna ante feugiat elit maecenas.
-          </p>
+        <h1 class="open-sans-light">Our Classes</h1>
+        <p>Our preschool program has four dedicated classes</p>
+        <img class="m-3" src="/src/assets/fable-img/images/header_divider.png" alt="">
+      </div>
+        
+      <div class="my-container">
+        <div class="row w-100 d-flex justify-content-between">
+          <div id="text-sx" class="col-6">
+            <p>
+              We provided four classes with nine to twenty children each aged twelve month to five years of age.
+            </p>
+          </div>
+          <div id="text-dx" class="col-6">
+            <p>
+              Praesent arcu gravida vehicula est node maecenas loareet morbi a dosis luctus. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis. Aenean interdum, nibh vitae sodales, magna ante feugiat elit maecenas.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+
+    
 
     <div class="my-container my-4">
       <div class="row w-100 d-flex justify-content-between flex-nowrap">
