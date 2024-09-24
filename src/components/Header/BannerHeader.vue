@@ -32,6 +32,7 @@ section{
     div{
         width: 100%;
     }
+    
 }
 
 h2{
@@ -68,11 +69,11 @@ button:hover{
     span {
         margin-right: 10px;
         text-transform: uppercase;
-        color: black;
+        color: #56509F;
     }
 
     i{
-        color: black; 
+        color: #56509F; 
     }
 
 }

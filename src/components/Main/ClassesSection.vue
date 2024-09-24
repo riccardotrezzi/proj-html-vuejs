@@ -1,5 +1,6 @@
 <script>
 import GoalsSection from './GoalsSection.vue';
+import PhotoGallery from './PhotoGallery.vue';
 
 
 export default {
@@ -8,7 +9,8 @@ export default {
     };
   },
   components:{
-    GoalsSection
+    GoalsSection,
+    PhotoGallery
   }
 
 }
@@ -156,6 +158,7 @@ export default {
     </div>
   </section>
   <GoalsSection />
+  <PhotoGallery />
 </template>
 
 <style lang="scss" scoped>
