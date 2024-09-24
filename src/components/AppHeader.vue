@@ -29,32 +29,39 @@ export default {
               <img src="../assets/fable-img/images/logo.png" alt="">
             </div>
             <div class="icon-nav col-8 d-flex justify-content-end g-0">
-              <div class="link-nav nav-active col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
-                <img class="icon-nav-img" src="../assets/fable-img/home-2.png" alt="">
+              <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center g-0">
+                <img class="icon-nav-img" src="../assets/fable-img/home.png" alt="">
+                <img class="icon-nav-img-white" src="../assets/fable-img/home-2.png" alt="">
                 <p>Home</p>
               </div>
-              <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
+              <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center g-0">
                 <img class="icon-nav-img" src="../assets/fable-img/document.png" alt="">
+                <img class="icon-nav-img-white" src="../assets/fable-img/document-2.png" alt="">
                 <p>Pages</p>
               </div>
-              <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
+              <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center g-0">
                 <img class="icon-nav-img" src="../assets/fable-img/printer.png" alt="">
+                <img class="icon-nav-img-white" src="../assets/fable-img/printer-2.png" alt="">
                 <p>Blog</p>
               </div>
-              <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
+              <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center g-0">
                 <img class="icon-nav-img" src="../assets/fable-img/cart.png" alt="">
+                <img class="icon-nav-img-white" src="../assets/fable-img/cart-2.png" alt="">
                 <p>Shop</p>
               </div>
-              <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
+              <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center g-0">
                 <img class="icon-nav-img" src="../assets/fable-img/lab.png" alt="">
+                <img class="icon-nav-img-white" src="../assets/fable-img/lab-2.png" alt="">
                 <p>Shortcodes</p>
               </div>
-              <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
+              <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center g-0">
                 <img class="icon-nav-img" src="../assets/fable-img/chat.png" alt="">
+                <img class="icon-nav-img-white" src="../assets/fable-img/chat-2.png" alt="">
                 <p>Support</p>
               </div>
               <div class="link-nav col-1 d-flex flex-column justify-content-center align-items-center align-self-center g-0">
                 <img class="icon-nav-img" src="../assets/fable-img/envelope.png" alt="">
+                <img class="icon-nav-img-white" src="../assets/fable-img/envelope-2.png" alt="">
                 <p>Contact</p>
               </div>
             </div>
@@ -67,7 +74,7 @@ export default {
     <BannerHeader />
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
  nav{
   box-shadow: 0 0 15px 0 #262626dc;
   background-color: white;
@@ -138,6 +145,12 @@ export default {
   margin-bottom: 10px;
 }
 
+.icon-nav-img-white{
+  display: none;
+  width: 35px;
+  margin-bottom: 10px;
+}
+
 .link-nav > p{
   font-size: 18px;
   font-weight: 300;
@@ -171,6 +184,12 @@ export default {
 
     p{
       color:white;
+    }
+    img:first-of-type{
+      display: none;
+    }
+    img:last-of-type{
+      display: flex;
     }
 }
 
