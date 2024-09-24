@@ -12,7 +12,7 @@ export default {
 <template>
   <section>
     <button class="circle-blu">
-      <i class="fa-solid fa-plus"></i>
+      <i class="fa-solid fa-location-dot"></i>
     </button>
     <button class="zoom d-flex flex-column">
       <i class="fa-solid fa-plus"></i>

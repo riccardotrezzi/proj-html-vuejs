@@ -10,27 +10,29 @@ export default {
                 title: 'Welcome to Fable',
                 subtitle: 'Perfect Education',
                 text: 'For Your Child',
-                image: `${basePath}Jumbotron-1.png`
+                image: `${basePath}Jumbotron-1.png`,
+                alignCenter: 'textcent',
             },
             {
                 id: 2,
                 title: 'Friendly Atmosphere',
                 subtitle: 'Welcoming Place',
                 text: 'For Every Child',
-                image: `${basePath}Jumbotron-2.png`
+                image: `${basePath}Jumbotron-2.png`,
+                alignSx: 'textsx',
             },
             {
                 id: 3,
                 title: 'Learning & Fun',
                 subtitle: 'Learning Programs',
                 text: '& After School Care',
-                image: `${basePath}Jumbotron-3.png`
+                image: `${basePath}Jumbotron-3.png`,
+                alignSx: 'textsx',
             }
         ],
         currentSlide: 0
     };
   },
-  // Aggiungere l'intervallo
   methods: {
     nextSlide() {
         if(this.currentSlide + 1 < this.slides.length) {
@@ -61,7 +63,17 @@ export default {
         <div class="jumbotron">
             <div class="slideshow">
                 <div v-for="(slide, index) in slides" :key="slide.id" class="slide" :class="{ active: index === currentSlide}" :style="{ backgroundImage: 'url(' + slide.image + ')' }" >
-                    <div class="my-container">
+                    
+                    <div class="d-flex w-100 align-items-center justify-content-between px-3">
+                        <button class="arrow-button d-flex align-items-center justify-content-center" @click="prevSlide">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="arrow-button d-flex align-items-center justify-content-center" @click="nextSlide">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="my-container" :class="{textsx: slide.alignSx, textcent: slide.alignCenter}">
                         <h2 class="coming-soon-regular">{{ slide.title }}</h2>
                         <p class="open-sans-bold">{{ slide.subtitle }}</p>
                         <p class="open-sans-light">{{ slide.text }}</p>
@@ -75,6 +87,7 @@ export default {
 
                 <div class="rect-slide">
                     <span v-for="(slide, index) in slides" :key="slide.id" :class="{ active: index === currentSlide }" @click="goToSlide(index)">
+                        
                         <button class="rect"></button>
                     </span>
                 </div>
@@ -91,7 +104,7 @@ export default {
 .jumbotron {
     position: relative;
     overflow: hidden;
-  }
+}
   
 .slideshow {
 display: flex;
@@ -112,6 +125,22 @@ padding: 10px;
 
 .slide.active {
 display: flex; /* Visualizziamo solo la slide attiva */
+}
+
+.textcent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.textsx{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    text-align:start;
 }
 
 .my-container > h2{
@@ -155,6 +184,7 @@ font-style: normal;
 }
 
 .button-jumbotron {
+width: fit-content;
 margin-top: 10px;
 padding: 15px;
 border: none;
@@ -171,6 +201,24 @@ background-color: #FE6500;
 
 /*Bottoncini */
 
+.arrow-button{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.arrow-button:hover{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background-color:#5E58A4;
+}
 .rect-slide{
     position: absolute;
     bottom: 0;
