@@ -64,6 +64,7 @@ export default {
 }
 
 .circle-blu{
+  opacity: 0;
   width: 110px;
   height:110px;
   border-radius: 50%;
@@ -81,6 +82,11 @@ export default {
     i{
       font-size: 24px;
     }
+}
+
+.circle-blu:hover{
+  opacity: 100;
+  transition: 0.5s ease-in-out;
 }
 
 #banner-section{

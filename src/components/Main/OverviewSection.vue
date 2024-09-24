@@ -1,10 +1,11 @@
 <script>
-const slidePath = '../src/assets/fable-img/images';
+const slidePath = '../assets/fable-img/images';
 
 export default {
   data() {
     return {
-      slideshow: [
+      mission: 'active',
+      slides: [
         {
           id: 1,
           image: `${slidePath}gallery_07-690x506.jpg`
@@ -23,7 +24,7 @@ export default {
   },
   methods: {
     nextSlide() {
-        if(this.currentImg + 1 < this.slideshow.length) {
+        if(this.currentImg + 1 < this.slides.length) {
             this.currentImg++;
         }
         else {
@@ -35,7 +36,7 @@ export default {
             this.currentImg--;
         }
         else {
-            this.currentImg = this.slideshow.length - 1;
+            this.currentImg = this.slides.length - 1;
         }
     },
     goToSlide(index) {
@@ -51,8 +52,8 @@ export default {
       <div class="row py-5">
 
         <div>
-          <button class="button-static active">Overview</button>
-          <button class="button-static ">Our Mission</button>
+          <button class="button-static active-button">Overview</button>
+          <button class="button-static">Our Mission</button>
         </div>
 
         <!--Overview-->
@@ -110,22 +111,34 @@ export default {
         <div class="my-container d-flex justify-content-end col-6 ">
           <div class="slideshow w-100">
             <div class="row">
-              <div v-for="(slide, index) in slideshow" :key="slide.id" class="slide col-12" :class="{ active: index === currentImg}" :style="{ backgroundImage: 'url(' + slide.image + ')' }">
-                <img :src="slide.image" alt="">
+              <div v-for="(slide, index) in slides" :key="slide.id" class="slide col-12" :class="{ active: index === currentImg}" :style="{ backgroundImage: 'url(' + slide.image + ')' }">
+                
+                <div class="d-flex w-100 align-items-center justify-content-between px-3">
+                  <button class="arrow-button d-flex align-items-center justify-content-center" @click="prevSlide">
+                      <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <button class="arrow-button d-flex align-items-center justify-content-center" @click="nextSlide">
+                      <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+                  
               </div>
             </div>
-
-            <div class="d-flex row">
-              <div class="box-img g-0 col-4">
-                <img src="/src/assets/fable-img/images/gallery_07-690x506.jpg" alt="">
-              </div>
-              <div class="box-img g-0 col-4">
-                <img src="/src/assets/fable-img/images/gallery_01.jpg" alt="">
-              </div>
-              <div class="box-img g-0 col-4">
-                <img src="/src/assets/fable-img/images/gallery_08-690x506.jpg" alt="">
+            
+            <div>
+              <div class="d-flex row">
+                <div class="box-img g-0 col-4">
+                  <img src="/src/assets/fable-img/images/gallery_07-690x506.jpg" alt="">
+                </div>
+                <div class="box-img g-0 col-4">
+                  <img src="/src/assets/fable-img/images/gallery_01.jpg" alt="">
+                </div>
+                <div class="box-img g-0 col-4">
+                  <img src="/src/assets/fable-img/images/gallery_08-690x506.jpg" alt="">
+                </div>
               </div>
             </div>
+            
           </div>
         </div>
     </div>
@@ -157,7 +170,7 @@ export default {
     border: none;
   }
 
-  .active{
+  .active-button{
     background-color:#FE6500;
     padding: 10px;
     margin-right: 15px;
@@ -201,7 +214,42 @@ export default {
 
   .slideshow{
     margin: 30px;
+    position: relative;
+    overflow: hidden;
   }
+
+  .slide {
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    display: none; /* Nascondiamo le slide per impostazione predefinita */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .slide.active {
+    display: flex; /* Visualizziamo solo la slide attiva */
+  }
+
+  .arrow-button{
+    width: 45px;
+    height: 45px;
+    border: none;
+    color: white;
+    background-color:#FE6500;
+}
+
+.arrow-button:hover{
+    width: 45px;
+    height: 45px;
+    border: none;
+    color: white;
+    background-color:#5E58A4;
+}
 
   .box-img{
     width: 160px;
