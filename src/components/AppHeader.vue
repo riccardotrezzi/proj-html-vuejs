@@ -16,13 +16,13 @@ export default {
 
 <template>
     <header>
-      <div id="add-envato" class="d-flex justify-content-between align-items-center">
-        <img class="col-6" id="logo-envato-market" src="../assets/fable-img/images/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed2486.svg" alt="envato-market">
-        <button>
-          Buy now
-        </button>
-      </div>
       <nav>
+        <div id="add-envato" class="d-flex justify-content-between align-items-center">
+          <img class="col-6" id="logo-envato-market" src="../assets/fable-img/images/envato_market-a5ace93f8482e885ae008eb481b9451d379599dfed2486.svg" alt="envato-market">
+          <button>
+            Buy now
+          </button>
+        </div>
         <div class="my-container navbar p-0">
           <div class="row d-flex justify-content-between g-0">
             <div id="logo-fable" class="col-2">
@@ -61,13 +61,19 @@ export default {
           </div>
         </div>
       </nav>
-
-      <SlideShow />
-      <BannerHeader />
     </header>
+
+    <SlideShow />
+    <BannerHeader />
 </template>
 
 <style lang="scss" scoped>
+ nav{
+  box-shadow: 0 0 15px 0 #262626dc;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
 
 /*Add Envato*/
 #add-envato{
@@ -104,9 +110,7 @@ export default {
 
 
 /*NAVBAR*/
-nav{
-  box-shadow: 0 0 15px 0 #262626dc;
-}
+
 
 .navbar{
   height: 125px;

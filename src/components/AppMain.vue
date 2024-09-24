@@ -2,6 +2,7 @@
 import WelcomeSection from './Main/WelcomeSection.vue';
 import ClassesSection from './Main/ClassesSection.vue';
 import StaffSection from './Main/StaffSection.vue';
+import BlogSection from './Main/BlogSection.vue';
 
 export default {
   data() {
@@ -11,7 +12,8 @@ export default {
   components:{
     WelcomeSection,
     ClassesSection,
-    StaffSection
+    StaffSection,
+    BlogSection
   }
 
 }
@@ -22,6 +24,7 @@ export default {
         <WelcomeSection />
         <ClassesSection />
         <StaffSection />
+        <BlogSection />
     </main>
 </template>
 
