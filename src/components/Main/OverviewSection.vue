@@ -4,7 +4,6 @@ const slidePath = '../assets/fable-img/images';
 export default {
   data() {
     return {
-      mission: 'active',
       slides: [
         {
           id: 1,
@@ -52,8 +51,8 @@ export default {
       <div class="row py-5">
 
         <div>
-          <button class="button-static active-button">Overview</button>
-          <button class="button-static">Our Mission</button>
+          <button class="button-static ">Overview</button>
+          <button id="active-button" class="button-static">Our Mission</button>
         </div>
 
         <!--Overview-->
@@ -105,6 +104,64 @@ export default {
 
               </div>
             </div>
+          </div>
+          
+          <div class="mission w-100 col-6">
+            <div class="row d-flex align-items-center">
+                
+              <div class="col-3 icon-mission">
+                <img src="/src/assets/fable-img/images/screen.png" alt="">
+              </div>
+
+              <div class="col-9">
+                <div>
+                  <h4 class="title-overview">
+                    Online Access
+                  </h4>
+                  <p class="text-overview">
+                    Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="row d-flex align-items-center">
+                
+                <div class="col-3 icon-mission my-4">
+                  <img src="/src/assets/fable-img/images/heart.png" alt="">
+                </div>
+  
+                <div class="col-9">
+                  <div>
+                    <h4 class="title-overview">
+                      Maecenas Node
+                    </h4>
+                    <p class="text-overview">
+                      Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.
+                    </p>
+                  </div>
+                </div>
+  
+              </div>
+              <div class="row d-flex align-items-center">
+                
+                <div class="col-3 icon-mission">
+                  <img src="/src/assets/fable-img/images/lab (1).png" alt="">
+                </div>
+  
+                <div class="col-9">
+                  <div>
+                    <h4 class="title-overview">
+                      Praesent Morbi
+                    </h4>
+                    <p class="text-overview">
+                      Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.
+                    </p>
+                  </div>
+                </div>
+  
+              </div>
+
           </div>
       </div>
       <!--SLIDER-->
@@ -170,7 +227,7 @@ export default {
     border: none;
   }
 
-  .active-button{
+  #active-button{
     background-color:#FE6500;
     padding: 10px;
     margin-right: 15px;
@@ -180,6 +237,11 @@ export default {
   }
 
   /*Card */
+
+  .overview{
+    display: none;
+  }
+
   .description-overview{
     color: #5E58A4;
     font-size: 35px;
@@ -198,6 +260,19 @@ export default {
     margin-bottom: 20px;
     margin-right: 15px;
     background-color: #FE6500;
+  }
+  .icon-mission{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:70px;
+    height:70px;
+    border: 1px solid #FE6500;
+    border-radius: 50%;
+    padding:15px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    background-color: #fe660000;
   }
 
   .title-overview{

@@ -86,8 +86,8 @@ section{
 }
 
 .review {
-  width: 100%;
-  display: none; /* Nascondiamo le slide per impostazione predefinita */
+  width: 100%; /* Nascondiamo le slide per impostazione predefinita */
+  display: none;
   color: #fff;
   padding: 10px;
 }
