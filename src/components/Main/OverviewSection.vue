@@ -1,5 +1,5 @@
 <script>
-const slidePath = '../assets/fable-img/images';
+const slidePath = '../src/assets/fable-img/images/';
 
 export default {
   data() {
@@ -295,7 +295,8 @@ export default {
 
   .slide {
     width: 100%;
-    height: 100px;
+    height: 300px;
+    margin-bottom: 15px;
     background-size: cover;
     display: none; /* Nascondiamo le slide per impostazione predefinita */
     flex-direction: column;
