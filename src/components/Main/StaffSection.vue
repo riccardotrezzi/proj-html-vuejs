@@ -82,7 +82,7 @@ export default {
             <div class="col-6">
               <div class="card-staff">
                 <div class="card-image">
-                  <img src="/src/assets/fable-img/images/team_04.jpg" alt="Team-04">
+                  <img src="/src/assets/fable-img/images/team_03.jpg" alt="Team-04">
                 </div>
                 <div class="text-center">
                   <h4 class="title-staff">Katie Wilmore</h4>
@@ -122,7 +122,7 @@ export default {
             <div class="col-6">
               <div class="card-staff">
                 <div class="card-image">
-                  <img src="/src/assets/fable-img/images/team_04.jpg" alt="Team-04">
+                  <img src="/src/assets/fable-img/images/team_02.jpg" alt="Team-04">
                 </div>
                 <div class="text-center">
                   <h4 class="title-staff">Angelica Watson</h4>
@@ -160,7 +160,7 @@ export default {
             <div class="col-6">
               <div class="card-staff">
                 <div class="card-image">
-                  <img src="/src/assets/fable-img/images/team_04.jpg" alt="Team-04">
+                  <img src="/src/assets/fable-img/images/team_01.jpg" alt="Team-04">
                 </div>
                 <div class="text-center">
                   <h4 class="title-staff">Angela Lynn</h4>
